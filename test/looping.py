@@ -3,9 +3,8 @@ import string
 import random
 
 def loop(file):
-    letters = string.ascii_letters
     with open(file, "w", encoding="utf-8") as file:
-        file.write(random.choice(letters))
+        file.write(random.choice(string.ascii_letters))
 
 if __name__ == '__main__':
     while True:
